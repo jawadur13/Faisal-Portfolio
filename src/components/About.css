@@ -1,0 +1,129 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.about-text p {
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.stat b {
+  display: block;
+  font-size: 1.8rem;
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stat span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.about-card {
+  border-radius: var(--radius);
+  padding: 32px;
+  display: grid;
+  gap: 22px;
+}
+
+.service {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #fff;
+  background: var(--grad-main);
+  box-shadow: 0 8px 20px rgba(255, 77, 157, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: transform 0.25s ease;
+}
+
+.service:hover .service-icon {
+  transform: scale(1.1) rotate(-6deg);
+}
+
+.service h3 {
+  font-size: 1.02rem;
+  margin-bottom: 4px;
+}
+
+.service p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.card-label {
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.timeline {
+  display: grid;
+  gap: 4px;
+  margin-top: 14px;
+}
+
+.timeline-item {
+  border-left: 2px solid var(--surface-border);
+  padding: 10px 0 10px 22px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -6.5px;
+  top: 20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--grad-main);
+  box-shadow: 0 0 0 4px rgba(255, 77, 157, 0.18);
+}
+
+.timeline-item .period {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--pink);
+}
+
+.timeline-item h4 {
+  font-size: 0.98rem;
+  margin: 2px 0;
+}
+
+.timeline-item p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
