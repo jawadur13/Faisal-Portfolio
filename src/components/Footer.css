@@ -42,3 +42,11 @@
   color: var(--pink);
   background: var(--glass-2);
 }
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -191,3 +191,28 @@
     width: min(280px, 72%);
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 104px;
+  }
+
+  .hero-actions .btn {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .hero-photo {
+    width: min(250px, 78%);
+  }
+
+  .photo-badge {
+    left: -8px;
+    padding: 8px 13px;
+    font-size: 0.76rem;
+  }
+
+  .scroll-hint {
+    display: none;
+  }
+}

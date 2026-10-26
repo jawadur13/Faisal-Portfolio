@@ -126,4 +126,12 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .about-card {
+    padding: 24px;
+  }
+
+  .stats {
+    gap: 26px;
+  }
 }

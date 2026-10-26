@@ -81,3 +81,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .work-card {
+    padding: 12px;
+  }
+
+  .works-foot {
+    margin-top: 28px;
+  }
+}
