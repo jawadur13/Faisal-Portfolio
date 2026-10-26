@@ -9,12 +9,10 @@
   --text-muted: #b4a0c9;
 
   --pink: #ff4d9d;
-  --orange: #ff8a3d;
   --violet: #8b5cf6;
-  --cyan: #22d3ee;
 
-  --grad-main: linear-gradient(120deg, var(--pink), var(--orange));
-  --grad-text: linear-gradient(100deg, var(--pink), var(--orange) 45%, var(--cyan));
+  --grad-main: linear-gradient(120deg, var(--violet), var(--pink));
+  --grad-text: linear-gradient(100deg, var(--violet), var(--pink) 60%);
 
   --glass: rgba(255, 255, 255, 0.055);
   --glass-2: rgba(255, 255, 255, 0.1);
@@ -23,9 +21,8 @@
   --shadow-card: 0 24px 48px -16px rgba(0, 0, 0, 0.55);
 
   --mesh:
-    radial-gradient(720px circle at 88% 8%, rgba(255, 77, 157, 0.22), transparent 65%),
-    radial-gradient(800px circle at 5% 90%, rgba(139, 92, 246, 0.24), transparent 65%),
-    radial-gradient(520px circle at 62% 52%, rgba(34, 211, 238, 0.12), transparent 70%);
+    radial-gradient(760px circle at 88% 8%, rgba(255, 77, 157, 0.2), transparent 65%),
+    radial-gradient(820px circle at 6% 92%, rgba(139, 92, 246, 0.26), transparent 65%);
   --noise-opacity: 0.035;
   --blob-opacity: 0.4;
   --switch-track: rgba(255, 255, 255, 0.08);
@@ -42,9 +39,7 @@
   --text-muted: #6d5a85;
 
   --pink: #e63d86;
-  --orange: #f2712a;
   --violet: #7a45e0;
-  --cyan: #0e9fc4;
 
   --glass: rgba(255, 255, 255, 0.55);
   --glass-2: rgba(255, 255, 255, 0.85);
@@ -53,9 +48,8 @@
   --shadow-card: 0 24px 48px -20px rgba(108, 68, 190, 0.28);
 
   --mesh:
-    radial-gradient(720px circle at 88% 8%, rgba(230, 61, 134, 0.14), transparent 65%),
-    radial-gradient(800px circle at 5% 90%, rgba(122, 69, 224, 0.14), transparent 65%),
-    radial-gradient(520px circle at 62% 52%, rgba(14, 159, 196, 0.08), transparent 70%);
+    radial-gradient(760px circle at 88% 8%, rgba(230, 61, 134, 0.13), transparent 65%),
+    radial-gradient(820px circle at 6% 92%, rgba(122, 69, 224, 0.16), transparent 65%);
   --noise-opacity: 0.05;
   --blob-opacity: 0.25;
   --switch-track: rgba(42, 25, 64, 0.07);
@@ -181,7 +175,7 @@ a {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 16px 40px rgba(255, 138, 61, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  box-shadow: 0 16px 40px rgba(139, 92, 246, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .btn-ghost {

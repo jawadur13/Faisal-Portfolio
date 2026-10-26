@@ -11,6 +11,7 @@ export default function Navbar() {
   const toggleTheme = () => {
     const next = theme === "dark" ? "light" : "dark";
     setTheme(next);
+    document.documentElement.dataset.theme = next;
     localStorage.setItem("theme", next);
   };
 
@@ -49,7 +50,7 @@ export default function Navbar() {
           <ul className={`links ${open ? "open" : ""}`}>
             <li><a href="#about" onClick={close}>About</a></li>
             <li><a href="#skills" onClick={close}>Skills</a></li>
-            <li><a href="#projects" onClick={close}>Projects</a></li>
+            <li><a href="#works" onClick={close}>Works</a></li>
             <li><a href="#contact" onClick={close}>Contact</a></li>
           </ul>
         </div>

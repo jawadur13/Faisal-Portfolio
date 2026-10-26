@@ -38,7 +38,7 @@
 
 .chip:hover {
   transform: translateY(-3px);
-  border-color: var(--cyan);
+  border-color: var(--violet);
   color: var(--text);
   background: var(--glass-2);
 }
