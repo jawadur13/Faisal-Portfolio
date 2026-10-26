@@ -6,7 +6,6 @@ export default function Hero() {
     <section id="top" className="hero">
       <div className="blob blob-1" />
       <div className="blob blob-2" />
-      <div className="blob blob-3" />
 
       <div className="container hero-grid">
         <div className="hero-content">
@@ -21,7 +20,7 @@ export default function Hero() {
             brands impossible to scroll past.
           </p>
           <div className="hero-actions">
-            <a href="#projects" className="btn btn-primary">View my work ↓</a>
+            <a href="#works" className="btn btn-primary">View my work ↓</a>
             <a href="#contact" className="btn btn-ghost">Get in touch</a>
           </div>
         </div>

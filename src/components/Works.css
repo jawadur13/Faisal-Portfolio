@@ -1,0 +1,83 @@
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 26px;
+}
+
+.work-card {
+  border-radius: var(--radius);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--pink);
+}
+
+.work-video {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.45);
+}
+
+.work-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #000;
+  border-radius: 14px;
+}
+
+.work-info {
+  padding: 2px 6px 8px;
+}
+
+.work-info h3 {
+  font-size: 1.08rem;
+  margin-bottom: 12px;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--switch-track);
+  color: var(--text-muted);
+}
+
+.works-foot {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.works-foot a {
+  font-weight: 600;
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.works-foot a:hover {
+  filter: brightness(1.25);
+}
+
+@media (max-width: 900px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+}
