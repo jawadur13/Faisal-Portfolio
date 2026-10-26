@@ -109,7 +109,7 @@ export const works = [
 ];
 
 export const socials = [
-  { name: "Facebook", url: "https://www.facebook.com/share/19tg9C7FWo/", icon: "facebook" },
+  { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61579069626700", icon: "facebook" },
   { name: "Instagram", url: "https://www.instagram.com/fasl__mp4", icon: "instagram" },
   { name: "WhatsApp", url: "https://wa.me/8801903310122", icon: "whatsapp" },
   { name: "Email", url: "mailto:faslmpfour@gmail.com", icon: "email" },
