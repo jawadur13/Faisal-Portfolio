@@ -20,6 +20,13 @@ export default function Footer() {
           ))}
         </div>
       </div>
+
+      <div className="credit container">
+        Made by{" "}
+        <a href="https://jawadurrafid.com" target="_blank" rel="noreferrer">
+          Jawadur Rafid
+        </a>
+      </div>
     </footer>
   );
 }

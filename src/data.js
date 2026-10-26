@@ -64,6 +64,11 @@ export const experience = [
 
 export const education = [
   {
+    period: "2024",
+    title: "SSC — Komorpur Abdul Aziz Institution",
+    text: "Completed Secondary School Certificate in 2024.",
+  },
+  {
     period: "2026",
     title: "HSC — Faridpur Government College",
     text: "Completed Higher Secondary Certificate in 2026; results awaiting. Preparing for LLB (law) admission.",

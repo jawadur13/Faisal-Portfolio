@@ -50,3 +50,25 @@
     text-align: center;
   }
 }
+
+.credit {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--surface-border);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.credit a {
+  font-weight: 600;
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: filter 0.2s ease;
+}
+
+.credit a:hover {
+  filter: brightness(1.3);
+}
