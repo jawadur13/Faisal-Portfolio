@@ -1,0 +1,134 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 12px 0 6px;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 999px;
+  padding: 10px 22px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nav.scrolled .nav-inner {
+  background: var(--nav-bg);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: var(--grad-main);
+  color: #fff;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1rem;
+  box-shadow: 0 6px 16px rgba(255, 77, 157, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--switch-track);
+  border: 1px solid var(--surface-border);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(-20deg) scale(1.07);
+  border-color: var(--pink);
+}
+
+.links {
+  display: flex;
+  gap: 26px;
+  list-style: none;
+}
+
+.links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: var(--pink);
+}
+
+.burger {
+  display: none;
+  background: var(--switch-track);
+  border: 1px solid var(--surface-border);
+  color: var(--text);
+  font-size: 1.15rem;
+  border-radius: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .burger {
+    display: block;
+  }
+
+  .links {
+    position: absolute;
+    top: 58px;
+    right: 6px;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    padding: 10px 26px;
+    display: none;
+    box-shadow: var(--shadow-card);
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .links a {
+    display: block;
+    padding: 10px 0;
+  }
+}
