@@ -1,15 +1,13 @@
-import { profile, socials } from "../data.js";
+import { socials } from "../data.js";
 import Icon from "./Icon.jsx";
 import "./Footer.css";
-
-const year = new Date().getFullYear();
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
         <div className="copy">
-          © {year} {profile.name} — Made with ☕ & gradients in Bangladesh
+          Available for new projects — videos, designs & social media
         </div>
         <div className="footer-socials">
           {socials.map((s) => (
