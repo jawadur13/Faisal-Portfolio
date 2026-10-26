@@ -29,7 +29,8 @@ export default function Navbar() {
         <div className="nav-inner glass">
           <a href="#top" className="logo" onClick={close}>
             <em className="logo-mark">{profile.firstName[0]}</em>
-            <span>{profile.firstName.toLowerCase()}'s</span>world
+            <span>faisal</span>
+            <span>mp4</span>
           </a>
 
           <div className="nav-right">

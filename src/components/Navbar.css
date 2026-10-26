@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  letter-spacing: 0.5px;
 }
 
 .logo span {
@@ -34,6 +35,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.logo span + span {
+  font-weight: 800;
 }
 
 .logo-mark {
