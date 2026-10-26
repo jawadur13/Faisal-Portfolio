@@ -1,8 +1,17 @@
+import { useRef } from "react";
 import { works } from "../data.js";
 import Reveal from "./Reveal.jsx";
 import "./Works.css";
 
 export default function Works() {
+  const videoRefs = useRef([]);
+
+  const handlePlay = (index) => {
+    videoRefs.current.forEach((video, i) => {
+      if (video && i !== index) video.pause();
+    });
+  };
+
   return (
     <section id="works" className="section">
       <div className="container">
@@ -17,7 +26,14 @@ export default function Works() {
           {works.map((w, i) => (
             <Reveal as="article" className="work-card glass" key={w.src} delay={(i % 2) * 100}>
               <div className="work-video">
-                <video controls preload="none" poster={w.poster} src={w.src}>
+                <video
+                  controls
+                  preload="none"
+                  poster={w.poster}
+                  src={w.src}
+                  ref={(el) => { videoRefs.current[i] = el; }}
+                  onPlay={() => handlePlay(i)}
+                >
                   Your browser doesn't support HTML5 video.
                 </video>
               </div>
