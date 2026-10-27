@@ -4,9 +4,10 @@ import Reveal from "./Reveal.jsx";
 import "./Contact.css";
 
 const cards = [
-  { key: "email", title: "Email", value: profile.email, url: `mailto:${profile.email}`, icon: "email" },
-  { key: "whatsapp", title: "WhatsApp", value: profile.whatsapp, url: socials[2].url, icon: "whatsapp" },
+  { key: "email", title: "Email", value: profile.email, url: profile.email ? `mailto:${profile.email}` : "", icon: "email" },
+  { key: "whatsapp", title: "WhatsApp", value: profile.whatsapp, url: socials[3].url, icon: "whatsapp" },
   { key: "instagram", title: "Instagram", value: "@fasl__mp4", url: socials[1].url, icon: "instagram" },
+  { key: "youtube", title: "YouTube", value: "@fasl_mp4", url: socials[2].url, icon: "youtube" },
   { key: "facebook", title: "Facebook", value: "Add me on Facebook", url: socials[0].url, icon: "facebook" },
 ];
 
