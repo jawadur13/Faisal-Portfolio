@@ -6,12 +6,19 @@ export const profile = {
   name: "Mir Faisal",
   firstName: "Faisal",
   role: "Designer · Content Creator · Video Editor · Social Media Manager",
-  headline: ["I craft", "scroll-stopping stories."],
+  tagline: "I craft",
   location: "Faridpur — 7800, Dhaka, Bangladesh",
   email: "faslmpfour@gmail.com",
   whatsapp: "01903310122",
   whatsappLink: "https://wa.me/8801903310122",
 };
+
+export const rotatingHeadlines = [
+  "scroll-stopping stories.",
+  "thumb-stopping thumbnails.",
+  "binge-worthy reels.",
+  "viral-ready content.",
+];
 
 export const bio = [
   "I'm Mir Faisal — a multidisciplinary creative from Faridpur, Bangladesh. I spend my days (and most nights) designing graphics, editing videos, and running social media pages that people actually enjoy following.",
