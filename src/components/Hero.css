@@ -49,6 +49,10 @@
   align-items: center;
 }
 
+.hero-content {
+  container-type: inline-size;
+}
+
 .hero-tag {
   display: inline-flex;
   align-items: center;
@@ -67,7 +71,7 @@
 }
 
 .hero h1 {
-  font-size: clamp(2.6rem, 6.4vw, 4.2rem);
+  font-size: clamp(2.3rem, 8.6cqi, 4.2rem);
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -78,15 +82,11 @@
 
 .hero h1 .accent {
   display: block;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   width: fit-content;
   position: relative;
-  overflow: hidden;
   white-space: nowrap;
   max-width: 100%;
+  font-size: 0.72em;
 }
 
 .rot-new,
@@ -99,38 +99,35 @@
 }
 
 .rot-new {
-  animation: rollIn 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation: swapIn 0.5s ease both;
 }
 
 .rot-old {
   position: absolute;
   left: 0;
   top: 0;
-  animation: rollOut 0.55s cubic-bezier(0.55, 0.06, 0.68, 0.19) both;
+  animation: swapOut 0.5s ease both;
 }
 
-@keyframes rollIn {
+@keyframes swapIn {
   from {
-    transform: translateY(75%);
     opacity: 0;
-    filter: blur(6px);
+    transform: translateY(14px);
   }
   to {
-    transform: none;
     opacity: 1;
-    filter: blur(0);
+    transform: none;
   }
 }
 
-@keyframes rollOut {
+@keyframes swapOut {
   from {
-    transform: none;
     opacity: 1;
+    transform: none;
   }
   to {
-    transform: translateY(-75%);
     opacity: 0;
-    filter: blur(6px);
+    transform: translateY(-12px);
   }
 }
 
@@ -277,11 +274,6 @@
     padding-top: 104px;
   }
 
-  .hero h1 .accent {
-    font-size: 0.52em;
-    letter-spacing: -0.5px;
-  }
-
   .hero-actions .btn {
     flex: 1 1 100%;
     justify-content: center;
@@ -299,12 +291,5 @@
 
   .scroll-hint {
     display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .hero h1 .accent {
-    font-size: 0.58em;
-    letter-spacing: -0.5px;
   }
 }
